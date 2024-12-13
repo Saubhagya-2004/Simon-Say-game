@@ -18,3 +18,15 @@ body{
     border: 10px solid black;
     margin: 19px;
 }
+.red{
+    background-color: #f99b45;
+}
+.yellow{
+    background-color: #d95980;
+}
+.green{
+    background-color: #63aac0;
+}
+.aqua{
+    background-color: #a1fadc;
+}

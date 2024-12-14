@@ -17,9 +17,11 @@ function levelup(){
     let randomx=Math.floor(Math.random()*3);
     let randomy=btns[randomx];
     let ranbtn=document.querySelector(`.${randomy}`);
-    console.log(randomx);
-    console.log(randomy);
-    console.log(ranbtn);
+    // console.log(randomx);
+    // console.log(randomy);
+    // console.log(ranbtn);
+    gameseq.push(randomy);
+    console.log(gameseq);
     btnflash(ranbtn);
 }
 function btnflash(btn){
@@ -40,11 +42,17 @@ function userflash(btn){
         btn.classList.remove('userflash');
     },300);
 };
+function checked(){
+    console.log('check level',level);
+}
 function btnpress(){
 console.log(this);
 let btn=this;
 userflash(btn);
-
+usercolor=btn.getAttribute('id');
+user.push(usercolor)
+console.log(user);
+checked();
 };
 let allbtns= document.querySelectorAll('.btn');
 for(btn of allbtns){

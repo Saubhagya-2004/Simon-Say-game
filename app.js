@@ -48,7 +48,7 @@ function checked() {
         }
         // console.log('Correct input');
     } else {
-        h2.innerHTML = `Game over! Press any key to start`;
+        h2.innerHTML = `Game over!your score was <b>${level}</b> Press any key to start`;
         document.querySelector('body').style.backgroundColor='red';
         setTimeout(function(){
             document.querySelector('body').style.backgroundColor='white';

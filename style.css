@@ -36,3 +36,11 @@ body{
 .userflash{
     background-color: greenyellow;
 }
+h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+   margin: 280px;
+   font-size: small;
+}
+#heart{
+    color: red;
+}
